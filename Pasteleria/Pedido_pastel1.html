@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar pedido de pastel</title>
+</head>
+<body>
+    <hr>
+    <h1 style="background-color: rgba(196, 196, 195, 0.897)">Pasteleria Luna</h1> <img src="https://github.com/OmarFonseca/Taconauta/blob/main/Pasteleria.png?raw=true" alt="Logo_pasteleria_luna" width="200px">
+    <h1>Formulario de pedido</h1>
+    <h2>Por favor, ingrese los siguientes datos para finalizar su pedido</h2>
+    
+    <form action="pedido.js">
+        <label for="Nombre">Ingrese su nombre completo</label><br>
+        <input type="text" id="Nombre" placeholder="Ingrese su nombre completo">
+        <br><br>
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="Telefono" maxlength="10" placeholder="10 digitos"><br><br>
+
+        <label for="correo1">Correo electrónico</label><br>
+        <input type="email" id="correo1" name="correo1" placeholder="correo electronico"><br><br>
+
+        <hr>
+
+        <h2>Seleccione su sabor</h2>
+        <p>Si lo desea, puede seleccionar 2 sabores para combinar su pastel (Solo puede hacer una combinación por pastel)</p>
+        <input type="radio" id="CoffeeCake1" name="Pastel" value="Pastel1">
+        <label for="CoffeeCake1">Coffee Cake</label><br>
+        <input type="radio" id="PastelAmericano1" name="Pastel" value="Pastel2">
+        <label for="PastelAmericano1">Pastel Americano</label><br>
+        <input type="radio" id="PastelBananaRon1" name="Pastel" value="Pastel3">
+        <label for="PastelBananaRon1">Pastel Banana Ron</label><br>
+        <input type="radio" id="PasteldeChocolateAlemán1" name="Pastel" value="Pastel4">
+        <label for="PasteldeChocolateAlemán1">Pastel de Chocolate Alemán</label><br>
+        <input type="radio" id="PasteldeChocolateEspecial1" name="Pastel" value="Pastel5">
+        <label for="PasteldeChocolateEspecial1">Pastel de Chocolate Especial</label><br>
+        <input type="radio" id="PasteldeFresa1" name="Pastel" value="Pastel6">
+        <label for="PasteldeFresa1">Pastel de Fresa</label><br>
+        <input type="radio" id="PasteldeLimón1" name="Pastel" value="Pastel7">
+        <label for="PasteldeLimón1">Pastel de Limón</label><br>
+        <input type="radio" id="PasteldeMoka1" name="Pastel" value="Pastel8">
+        <label for="PasteldeMoka1">Pastel de Moka</label><br>
+        <input type="radio" id="PasteldeQuesoBlueberry1" name="Pastel" value="Pastel9">
+        <label for="PasteldeQuesoBlueberry1">Pastel de Queso Blueberry</label><br>
+        <input type="radio" id="PasteldequesoCereza1" name="Pastel" value="Pastel10">
+        <label for="PasteldequesoCereza1">Pastel de queso Cereza</label><br>
+        <input type="radio" id="PasteldeTresLeches1" name="Pastel" value="Pastel11">
+        <label for="PasteldeTresLeches1">Pastel de Tres Leches</label><br>
+        <input type="radio" id="PasteldeZanahoria1" name="Pastel" value="Pastel12">
+        <label for="PasteldeZanahoria1">Pastel de Zanahoria</label><br>
+        <input type="radio" id="PastelMaxi1" name="Pastel" value="Pastel13">
+        <label for="PastelMaxi1">Pastel Maxi</label><br><br>
+
+        <hr>
+
+        <h2>¿Desea combinar el pastel?</h2>
+        <p>Combinaciones:</p>
+        <select name="Combinacion" id="pastel">
+            <option value="Pastel1">Coffee Cake</option>
+            <option value="Pastel2">Pastel Americano</option>
+            <option value="Pastel3">Pastel Banana Ron</option>
+            <option value="Pastel4">Pastel de Chocolate Alemán</option>
+            <option value="Pastel5">Pastel de Chocolate Especial</option>
+            <option value="Pastel6">Pastel de Fresa</option>
+            <option value="Pastel7">Pastel de Limón</option>
+            <option value="Pastel8">Pastel de Moka</option>
+            <option value="Pastel9">Pastel de Queso Blueberryn</option>
+            <option value="Pastel10">Pastel de queso Cereza</option>
+            <option value="Pastel11">Pastel de Tres Leches</option>
+            <option value="Pastel12">Pastel de Zanahoria</option>
+            <option value="Pastel13">Pastel Maxi</option>
+        </select><br><br>
+
+        <hr>
+
+        <h2>Por favor describa a detalle como desea su pastel y la decoración</h2>
+        <textarea name="textarea" rows="10" cols="50">Descripción de pedido</textarea>
+
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+        <br><br>
+
+    </form>
+
+</body>
+</html>
